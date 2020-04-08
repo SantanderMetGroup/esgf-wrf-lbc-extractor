@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# Usage: ./generate-selection FILE SELECTION-DIRECTORY
+
+project=$(sed '2q;d' ${1} | awk '{print $1}')
+product=$(sed '2q;d' ${1} | awk '{print $2}')
+model=$(sed '2q;d' ${1} | awk '{print $3}')
+experiment=$(sed '2q;d' ${1} | awk '{print $4}')
+
+tail -n +4 "${1}" | while read variable grib ltype ensemble version frequency realm cmor_table process filter
+do
+  echo "Processing $*"
+  dataset_id=$(synda search variable="$variable" project="$project" product="$product"            \
+                            model="$model" experiment="$experiment" ensemble="$ensemble"          \
+                            frequency="$frequency" realm="$realm" cmor_table="$cmor_table"        \
+                            version="$version" | awk '{print $2}')
+
+  if [[ ! -z "$dataset_id" ]]; then
+    echo -e "dataset_id=${dataset_id}\nvariable=${variable}" > ${2}/"${dataset_id}.${version}.${variable}"
+  fi
+done

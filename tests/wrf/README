@@ -1,0 +1,5 @@
+conda activate pyramid-phoenix
+
+pyramid-phoenix $ make start
+wrf-bc-extractor $ make start
+ssh -L 8081:wn006:8081 -L 8443:wn006:8443 -L 5000:wn006:5000 -N ui.macc.unican.es &

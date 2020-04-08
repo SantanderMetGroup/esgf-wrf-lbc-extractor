@@ -1,0 +1,34 @@
+taskid: 0 hostname: ui.macc.unican.es
+ module_io_quilt_old.F        2931 T
+ Ntasks in X            1, ntasks in Y            1
+--- WARNING: traj_opt is zero, but num_traj is not zero; setting num_traj to zero.
+--- NOTE: grid_fdda is 0 for domain      1, setting gfdda interval and ending time to 0 for that domain.
+--- NOTE: both grid_sfdda and pxlsm_soil_nudge are 0 for domain      1, setting sgfdda interval and ending time to 0 for that domain.
+--- NOTE: obs_nudge_opt is 0 for domain      1, setting obs nudging interval and ending time to 0 for that domain.
+--- NOTE: bl_pbl_physics /= 4, implies mfshconv must be 0, resetting
+Need MYNN PBL for icloud_bl = 1, resetting to 0
+--- NOTE: RRTMG radiation is not used, setting:  o3input=0 to avoid data pre-processing
+--- NOTE: num_soil_layers has been set to      4
+REAL_EM V3.8.1 PREPROCESSOR
+ *************************************
+ Parent domain
+ ids,ide,jds,jde            1         127           1         124
+ ims,ime,jms,jme           -4         132          -4         129
+ ips,ipe,jps,jpe            1         127           1         124
+ *************************************
+DYNAMICS OPTION: Eulerian Mass Coordinate
+   alloc_space_field: domain            1,              478251260 bytes allocated
+ metgrid input_wrf.F first_date_input = 2033-12-24_00_00_00
+ metgrid input_wrf.F first_date_nml = 2033-12-24_00:00:00
+d01 2033-12-24_00:00:00 Timing for input          0 s.
+ Missing surface temp, replaced with closest level, use_surface set to false.
+ Missing surface RH, replaced with closest level, use_surface set to false.
+ Missing surface u wind, replaced with closest level, use_surface set to false.
+ Missing surface v wind, replaced with closest level, use_surface set to false.
+Using sfcprs3 to compute psfc
+d01 2033-12-24_00:00:00   flag value of flag_qnwfa is            0
+d01 2033-12-24_00:00:00 Old data, no inland lake information
+-------------- FATAL CALLED ---------------
+FATAL CALLED FROM FILE:  <stdin>  LINE:    2290
+Not enough soil temperature data for Noah LSM scheme.
+-------------------------------------------

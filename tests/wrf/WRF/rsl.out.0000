@@ -1,0 +1,83 @@
+ Ntasks in X            1, ntasks in Y            1
+--- WARNING: traj_opt is zero, but num_traj is not zero; setting num_traj to zero.
+--- NOTE: grid_fdda is 0 for domain      1, setting gfdda interval and ending time to 0 for that domain.
+--- NOTE: both grid_sfdda and pxlsm_soil_nudge are 0 for domain      1, setting sgfdda interval and ending time to 0 for that domain.
+--- NOTE: obs_nudge_opt is 0 for domain      1, setting obs nudging interval and ending time to 0 for that domain.
+--- NOTE: bl_pbl_physics /= 4, implies mfshconv must be 0, resetting
+Need MYNN PBL for icloud_bl = 1, resetting to 0
+--- NOTE: RRTMG radiation is not used, setting:  o3input=0 to avoid data pre-processing
+--- NOTE: num_soil_layers has been set to      4
+REAL_EM V3.8.1 PREPROCESSOR
+ *************************************
+ Parent domain
+ ids,ide,jds,jde            1         127           1         124
+ ims,ime,jms,jme           -4         132          -4         129
+ ips,ipe,jps,jpe            1         127           1         124
+ *************************************
+DYNAMICS OPTION: Eulerian Mass Coordinate
+   alloc_space_field: domain            1,              478251260 bytes allocated
+Time period #   1 to process = 2033-12-24_00:00:00.
+Time period #   2 to process = 2033-12-24_06:00:00.
+Time period #   3 to process = 2033-12-24_12:00:00.
+Time period #   4 to process = 2033-12-24_18:00:00.
+Time period #   5 to process = 2033-12-25_00:00:00.
+Total analysis times to input =    5.
+  
+ -----------------------------------------------------------------------------
+  
+ Domain  1: Current date being processed: 2033-12-24_00:00:00.0000, which is loop #   1 out of    5
+ configflags%julyr, %julday, %gmt:        2033         358  0.0000000E+00
+ metgrid input_wrf.F first_date_input = 2033-12-24_00_00_00
+ metgrid input_wrf.F first_date_nml = 2033-12-24_00:00:00
+d01 2033-12-24_00:00:00 Timing for input          0 s.
+ Missing surface temp, replaced with closest level, use_surface set to false.
+ Missing surface RH, replaced with closest level, use_surface set to false.
+ Missing surface u wind, replaced with closest level, use_surface set to false.
+ Missing surface v wind, replaced with closest level, use_surface set to false.
+Using sfcprs3 to compute psfc
+ Converged znw(kte) should be about 0.0 =  -3.1142309E-03
+Full level index =    1     Height =     0.0 m
+Full level index =    2     Height =    56.6 m      Thickness =   56.6 m
+Full level index =    3     Height =   137.9 m      Thickness =   81.4 m
+Full level index =    4     Height =   244.7 m      Thickness =  106.8 m
+Full level index =    5     Height =   377.6 m      Thickness =  132.9 m
+Full level index =    6     Height =   546.3 m      Thickness =  168.7 m
+Full level index =    7     Height =   761.1 m      Thickness =  214.8 m
+Full level index =    8     Height =  1016.2 m      Thickness =  255.0 m
+Full level index =    9     Height =  1455.3 m      Thickness =  439.1 m
+Full level index =   10     Height =  1914.6 m      Thickness =  459.3 m
+Full level index =   11     Height =  2396.2 m      Thickness =  481.6 m
+Full level index =   12     Height =  2902.5 m      Thickness =  506.3 m
+Full level index =   13     Height =  3845.1 m      Thickness =  942.6 m
+Full level index =   14     Height =  4787.7 m      Thickness =  942.6 m
+Full level index =   15     Height =  5730.3 m      Thickness =  942.6 m
+Full level index =   16     Height =  6672.9 m      Thickness =  942.6 m
+Full level index =   17     Height =  7615.5 m      Thickness =  942.6 m
+Full level index =   18     Height =  8558.1 m      Thickness =  942.6 m
+Full level index =   19     Height =  9500.7 m      Thickness =  942.6 m
+Full level index =   20     Height = 10443.3 m      Thickness =  942.6 m
+Full level index =   21     Height = 11385.9 m      Thickness =  942.6 m
+Full level index =   22     Height = 12328.5 m      Thickness =  942.6 m
+Full level index =   23     Height = 13271.1 m      Thickness =  942.6 m
+Full level index =   24     Height = 14213.7 m      Thickness =  942.6 m
+Full level index =   25     Height = 15156.3 m      Thickness =  942.6 m
+Full level index =   26     Height = 16098.9 m      Thickness =  942.6 m
+Full level index =   27     Height = 17041.5 m      Thickness =  942.6 m
+Full level index =   28     Height = 17984.1 m      Thickness =  942.6 m
+Full level index =   29     Height = 18926.7 m      Thickness =  942.6 m
+Full level index =   30     Height = 19869.3 m      Thickness =  942.6 m
+d01 2033-12-24_00:00:00   flag value of flag_qnwfa is            0
+d01 2033-12-24_00:00:00 Old data, no inland lake information
+-------------- FATAL CALLED ---------------
+FATAL CALLED FROM FILE:  <stdin>  LINE:    2290
+Not enough soil temperature data for Noah LSM scheme.
+-------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD 
+with errorcode 1.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+taskid: 0 hostname: ui.macc.unican.es
