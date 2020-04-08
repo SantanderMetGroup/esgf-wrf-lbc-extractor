@@ -54,11 +54,10 @@ class BCExtractor(Process):
     @staticmethod
     def _handler(request, response):
         LOGGER.info("Extract boundary conditions")
-        print(os.listdir('.'))
 
         bc_table = request.inputs['bc_table'][0].file
 
-        command = ["../bin/preprocessor.ESGF", "2033-12-24_00:00:00", "2033-12-30_00:00:00", "/oceano/gmeteo/WORK/ASNA/DATA/CanESM2", bc_table]
+        command = ["/bin/preprocessor.ESGF", "2033-12-24_00:00:00", "2033-12-30_00:00:00", "/oceano/gmeteo/WORK/ASNA/DATA/CanESM2", bc_table]
         bc = subprocess.run(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         outlog = bc.stdout.decode("utf-8")
         errlog = bc.stderr.decode("utf-8")
