@@ -54,6 +54,7 @@ class BCExtractor(Process):
     @staticmethod
     def _handler(request, response):
         LOGGER.info("Extract boundary conditions")
+        print(os.listdir('.'))
 
         bc_table = request.inputs['bc_table'][0].file
 
