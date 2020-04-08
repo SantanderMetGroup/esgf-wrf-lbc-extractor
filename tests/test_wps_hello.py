@@ -2,7 +2,7 @@ from pywps import Service
 from pywps.tests import client_for, assert_response_success
 
 from .common import get_output
-from esgf_wrf_lbc_extractor.processes.wps_say_hello import SayHello
+from esgf-wrf-lbc-extractor.processes.wps_say_hello import SayHello
 
 
 def test_wps_hello():

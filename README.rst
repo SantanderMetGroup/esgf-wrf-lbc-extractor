@@ -2,15 +2,15 @@ esgf-wrf-lbc-extractor
 ===============================
 
 .. image:: https://img.shields.io/badge/docs-latest-brightgreen.svg
-   :target: http://esgf_wrf_lbc_extractor.readthedocs.io/en/latest/?badge=latest
+   :target: http://esgf-wrf-lbc-extractor.readthedocs.io/en/latest/?badge=latest
    :alt: Documentation Status
 
-.. image:: https://travis-ci.org/zequihg50/esgf_wrf_lbc_extractor.svg?branch=master
-   :target: https://travis-ci.org/zequihg50/esgf_wrf_lbc_extractor
+.. image:: https://travis-ci.org/zequihg50/esgf-wrf-lbc-extractor.svg?branch=master
+   :target: https://travis-ci.org/zequihg50/esgf-wrf-lbc-extractor
    :alt: Travis Build
 
-.. image:: https://img.shields.io/github/license/zequihg50/esgf_wrf_lbc_extractor.svg
-    :target: https://github.com/zequihg50/esgf_wrf_lbc_extractor/blob/master/LICENSE.txt
+.. image:: https://img.shields.io/github/license/zequihg50/esgf-wrf-lbc-extractor.svg
+    :target: https://github.com/zequihg50/esgf-wrf-lbc-extractor/blob/master/LICENSE.txt
     :alt: GitHub license
 
 .. image:: https://badges.gitter.im/bird-house/birdhouse.svg

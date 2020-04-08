@@ -21,15 +21,15 @@ Check out code from the esgf-wrf-lbc-extractor GitHub repo and start the install
 
 .. code-block:: console
 
-   $ git clone https://github.com/zequihg50/esgf_wrf_lbc_extractor.git
-   $ cd esgf_wrf_lbc_extractor
+   $ git clone https://github.com/zequihg50/esgf-wrf-lbc-extractor.git
+   $ cd esgf-wrf-lbc-extractor
 
-Create Conda environment named `esgf_wrf_lbc_extractor`:
+Create Conda environment named `esgf-wrf-lbc-extractor`:
 
 .. code-block:: console
 
    $ conda env create -f environment.yml
-   $ source activate esgf_wrf_lbc_extractor
+   $ source activate esgf-wrf-lbc-extractor
 
 Install esgf-wrf-lbc-extractor app:
 
@@ -50,16 +50,16 @@ For development you can use this command:
 Start esgf-wrf-lbc-extractor PyWPS service
 ------------------------------------------
 
-After successful installation you can start the service using the ``esgf_wrf_lbc_extractor`` command-line.
+After successful installation you can start the service using the ``esgf-wrf-lbc-extractor`` command-line.
 
 .. code-block:: console
 
-   $ esgf_wrf_lbc_extractor --help # show help
-   $ esgf_wrf_lbc_extractor start  # start service with default configuration
+   $ esgf-wrf-lbc-extractor --help # show help
+   $ esgf-wrf-lbc-extractor start  # start service with default configuration
 
    OR
 
-   $ esgf_wrf_lbc_extractor start --daemon # start service as daemon
+   $ esgf-wrf-lbc-extractor start --daemon # start service as daemon
    loading configuration
    forked process id: 42
 

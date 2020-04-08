@@ -4,7 +4,7 @@
 # You can set these variables from the command line.
 SPHINXOPTS    =
 SPHINXBUILD   = sphinx-build
-SPHINXPROJ    = esgf_wrf_lbc_extractor
+SPHINXPROJ    = esgf-wrf-lbc-extractor
 SOURCEDIR     = source
 BUILDDIR      = build
 

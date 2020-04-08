@@ -1,6 +1,6 @@
 # Configuration
 APP_ROOT := $(abspath $(lastword $(MAKEFILE_LIST))/..)
-APP_NAME := esgf_wrf_lbc_extractor
+APP_NAME := esgf-wrf-lbc-extractor
 
 WPS_URL = https://localhost:5000/
 OUTPUT_URL = $(WPS_URL)/wpsoutputs

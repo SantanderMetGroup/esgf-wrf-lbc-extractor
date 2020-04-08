@@ -10,6 +10,6 @@ Processes
 Say Hello
 ---------
 
-.. autoprocess:: esgf_wrf_lbc_extractor.processes.wps_say_hello.SayHello
+.. autoprocess:: esgf-wrf-lbc-extractor.processes.wps_say_hello.SayHello
    :docstring:
    :skiplines: 1

@@ -9,13 +9,13 @@ Command-line options
 You can overwrite the default `PyWPS`_ configuration by using command-line options.
 See the esgf-wrf-lbc-extractor help which options are available::
 
-    $ esgf_wrf_lbc_extractor start --help
+    $ esgf-wrf-lbc-extractor start --help
     --hostname HOSTNAME        hostname in PyWPS configuration.
     --port PORT                port in PyWPS configuration.
 
 Start service with different hostname and port::
 
-    $ esgf_wrf_lbc_extractor start --hostname localhost --port 5001
+    $ esgf-wrf-lbc-extractor start --hostname localhost --port 5001
 
 Use a custom configuration file
 -------------------------------
@@ -28,7 +28,7 @@ For example change the hostname (*demo.org*) and logging level:
 
 .. code-block:: console
 
-   $ cd esgf_wrf_lbc_extractor
+   $ cd esgf-wrf-lbc-extractor
    $ vim etc/custom.cfg
    $ cat etc/custom.cfg
    [server]
@@ -43,7 +43,7 @@ Start the service with your custom configuration:
 .. code-block:: console
 
    # start the service with this configuration
-   $ esgf_wrf_lbc_extractor start -c etc/custom.cfg
+   $ esgf-wrf-lbc-extractor start -c etc/custom.cfg
 
 
 .. _PyWPS: http://pywps.org/

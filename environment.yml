@@ -1,4 +1,4 @@
-name: esgf_wrf_lbc_extractor
+name: esgf-wrf-lbc-extractor
 channels:
 - conda-forge
 - defaults

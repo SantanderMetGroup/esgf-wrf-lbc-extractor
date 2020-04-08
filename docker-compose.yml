@@ -2,7 +2,7 @@ version: '3'
 services:
   wps:
     build: .
-    image: zequihg50/esgf_wrf_lbc_extractor
+    image: zequihg50/esgf-wrf-lbc-extractor
     ports:
       - "5000:5000"
 

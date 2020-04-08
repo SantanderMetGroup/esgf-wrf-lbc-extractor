@@ -1,7 +1,7 @@
 from pywps import Service
 
 from .common import client_for
-from esgf_wrf_lbc_extractor.processes import processes
+from esgf-wrf-lbc-extractor.processes import processes
 
 
 def test_wps_caps():

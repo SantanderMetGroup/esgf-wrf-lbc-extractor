@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 #
-# esgf_wrf_lbc_extractor documentation build configuration file, created by
+# esgf-wrf-lbc-extractor documentation build configuration file, created by
 # sphinx-quickstart on Fri Jun  9 13:47:02 2017.
 #
 # This file is execfile()d with the current directory set to its
@@ -119,7 +119,7 @@ html_static_path = ["_static"]
 # -- Options for HTMLHelp output ---------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = "esgf_wrf_lbc_extractordoc"
+htmlhelp_basename = "esgf-wrf-lbc-extractordoc"
 
 
 # -- Options for LaTeX output ------------------------------------------
@@ -145,7 +145,7 @@ latex_elements = {
 latex_documents = [
     (
         master_doc,
-        "esgf_wrf_lbc_extractor.tex",
+        "esgf-wrf-lbc-extractor.tex",
         "esgf-wrf-lbc-extractor Documentation",
         "Ezequiel Cimadevilla Alvarez",
         "manual",
@@ -160,7 +160,7 @@ latex_documents = [
 man_pages = [
     (
         master_doc,
-        "esgf_wrf_lbc_extractor",
+        "esgf-wrf-lbc-extractor",
         "esgf-wrf-lbc-extractor Documentation",
         [author],
         1,
@@ -176,10 +176,10 @@ man_pages = [
 texinfo_documents = [
     (
         master_doc,
-        "esgf_wrf_lbc_extractor",
+        "esgf-wrf-lbc-extractor",
         "esgf-wrf-lbc-extractor Documentation",
         author,
-        "esgf_wrf_lbc_extractor",
+        "esgf-wrf-lbc-extractor",
         "One line description of project.",
         "Miscellaneous",
     ),

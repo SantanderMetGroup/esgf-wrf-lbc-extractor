@@ -13,7 +13,7 @@ CHANGES = open(os.path.join(here, 'CHANGES.rst')).read()
 REQUIRES_PYTHON = ">=3.5.0"
 
 about = {}
-with open(os.path.join(here, 'esgf_wrf_lbc_extractor', '__version__.py'), 'r') as f:
+with open(os.path.join(here, 'esgf-wrf-lbc-extractor', '__version__.py'), 'r') as f:
     exec(f.read(), about)
 
 reqs = [line.strip() for line in open('requirements.txt')]
@@ -35,18 +35,18 @@ classifiers = [
     'License :: OSI Approved :: MIT License',
 ]
 
-setup(name='esgf_wrf_lbc_extractor',
+setup(name='esgf-wrf-lbc-extractor',
       version=about['__version__'],
       description="This tool extracts boundary conditions from GCMs stored under the ESGF DRS.",
       long_description=README + '\n\n' + CHANGES,
       long_description_content_type="text/x-rst",
       author=about['__author__'],
       author_email=about['__email__'],
-      url='https://github.com/zequihg50/esgf_wrf_lbc_extractor',
+      url='https://github.com/zequihg50/esgf-wrf-lbc-extractor',
       python_requires=REQUIRES_PYTHON,
       classifiers=classifiers,
       license="MIT license",
-      keywords='wps pywps birdhouse esgf_wrf_lbc_extractor',
+      keywords='wps pywps birdhouse esgf-wrf-lbc-extractor',
       packages=find_packages(),
       include_package_data=True,
       install_requires=reqs,
@@ -55,5 +55,5 @@ setup(name='esgf_wrf_lbc_extractor',
       },
       entry_points={
           'console_scripts': [
-              'esgf_wrf_lbc_extractor=esgf_wrf_lbc_extractor.cli:cli',
+              'esgf-wrf-lbc-extractor=esgf-wrf-lbc-extractor.cli:cli',
           ]},)

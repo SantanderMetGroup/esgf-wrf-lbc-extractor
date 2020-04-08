@@ -1,6 +1,6 @@
 # vim:set ft=dockerfile:
 FROM continuumio/miniconda3
-MAINTAINER https://github.com/zequihg50/esgf_wrf_lbc_extractor
+MAINTAINER https://github.com/zequihg50/esgf-wrf-lbc-extractor
 LABEL Description="esgf-wrf-lbc-extractor WPS" Vendor="Birdhouse" Version="0.1.0"
 
 # Update Debian system
@@ -25,9 +25,9 @@ RUN ["/bin/bash", "-c", "source activate wps && python setup.py develop"]
 # Start WPS service on port 5000 on 0.0.0.0
 EXPOSE 5000
 ENTRYPOINT ["/bin/bash", "-c"]
-CMD ["source activate wps && exec esgf_wrf_lbc_extractor start -b 0.0.0.0 -c /opt/wps/etc/demo.cfg"]
+CMD ["source activate wps && exec esgf-wrf-lbc-extractor start -b 0.0.0.0 -c /opt/wps/etc/demo.cfg"]
 
-# docker build -t zequihg50/esgf_wrf_lbc_extractor .
-# docker run -p 5000:5000 zequihg50/esgf_wrf_lbc_extractor
+# docker build -t zequihg50/esgf-wrf-lbc-extractor .
+# docker run -p 5000:5000 zequihg50/esgf-wrf-lbc-extractor
 # http://localhost:5000/wps?request=GetCapabilities&service=WPS
 # http://localhost:5000/wps?request=DescribeProcess&service=WPS&identifier=all&version=1.0.0

@@ -32,17 +32,17 @@ install:
   # Useful for debugging any issues with conda
   - conda info -a
   # Prepare env with Python version
-  - conda create -n esgf_wrf_lbc_extractor -c conda-forge python=$TRAVIS_PYTHON_VERSION
+  - conda create -n esgf-wrf-lbc-extractor -c conda-forge python=$TRAVIS_PYTHON_VERSION
   # Update now the env with our environment
   - conda env update -f environment.yml
-  - source activate esgf_wrf_lbc_extractor
+  - source activate esgf-wrf-lbc-extractor
   # Packages for testing
   - conda install pytest flake8
   # Install WPS
   - python setup.py install
 before_script:
   # Start WPS service on port 5000 on 0.0.0.0
-  - esgf_wrf_lbc_extractor start --daemon --bind-host 0.0.0.0 --port 5000
+  - esgf-wrf-lbc-extractor start --daemon --bind-host 0.0.0.0 --port 5000
   - sleep 2
 script:
   - pytest

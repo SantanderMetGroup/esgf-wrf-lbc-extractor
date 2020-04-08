@@ -31,11 +31,11 @@ Running tests
 
 Run tests using pytest_.
 
-First activate the ``esgf_wrf_lbc_extractor`` Conda environment and install ``pytest``.
+First activate the ``esgf-wrf-lbc-extractor`` Conda environment and install ``pytest``.
 
 .. code-block:: console
 
-   $ source activate esgf_wrf_lbc_extractor
+   $ source activate esgf-wrf-lbc-extractor
    $ pip install -r requirements_dev.txt  # if not already installed
    OR
    $ make develop
@@ -79,10 +79,10 @@ Update the Conda specification file to build identical environments_ on a specif
 .. code-block:: console
 
   $ conda env create -f environment.yml
-  $ source activate esgf_wrf_lbc_extractor
+  $ source activate esgf-wrf-lbc-extractor
   $ make clean
   $ make install
-  $ conda list -n esgf_wrf_lbc_extractor --explicit > spec-file.txt
+  $ conda list -n esgf-wrf-lbc-extractor --explicit > spec-file.txt
 
 .. _environments: https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#building-identical-conda-environments
 
