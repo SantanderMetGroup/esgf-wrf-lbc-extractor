@@ -47,7 +47,6 @@ unit_tests/testdata.json
 *.sublime*
 
 # buildout
-bin
 develop-eggs
 eggs
 parts
